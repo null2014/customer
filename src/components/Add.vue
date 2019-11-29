@@ -29,6 +29,12 @@
           <label>畢業學校</label>
             <input type="text" class="form-control" placeholder="graduationschool" v-model="customer.graduationschool">
        </div>
+       <div class="form-group">
+          <label>部門</label>
+            <select type="text" class="form-control" placeholder="graduationschool" v-model="customer.graduationschool">
+              <option></option>
+            </select>
+       </div>
         <div class="form-group">
           <label>個人簡介</label>
             <!-- <input type="text" class="form-control" placeholder="profile" v-model="customer.profile"> -->
@@ -73,6 +79,9 @@ export default {
         this.$http.post("http://localhost:3000/users",newCustomer).then(function(response){
          //console.log(newCustomer);
           this.$router.push({path:"/",query:{alert:"用戶添加成功！！！"}});
+        
+          
+          
     })
       }
     e.preventDefault();

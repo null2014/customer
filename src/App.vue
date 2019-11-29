@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Customers from './components/HelloCustomers'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Customers
   }
 }
 </script>

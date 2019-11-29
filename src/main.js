@@ -10,6 +10,8 @@ import Add from './components/Add'
 import CustomerDetails from './components/CustomerDetails'
 import Edit from './components/Edit'
 import Chart from './components/Chart'
+import Department from './components/Department'
+import AddDepartment from './components/AddDepartment'
 
 
 
@@ -32,6 +34,8 @@ const router = new VueRouter({
     { path: "/customers/:id", component: CustomerDetails },
     { path: "/edit/:id", component: Edit },
     { path: "/chart", component: Chart },
+    { path: "/department", component: Department },
+    { path: "/addDepartment", component: AddDepartment },
     
    
     
