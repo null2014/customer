@@ -1,8 +1,8 @@
 <template>
   <div class="customers container">
-    <input type="text" class="form-conted" placeholder="搜索" v-model="filterInput">
+   <input type="text" class="form-conted" placeholder="搜索" v-model="filterInput">
     <br>
-    <tr v-for="customer in filterBy(customer,filterInput)"/>
+    <tr v-for="customer in filterBy(customers,filterInput)"/>
     <h1 class="page-header">用戶信息</h1>
     <br>
     <table class="table table-striped">
@@ -69,19 +69,6 @@ export default {
   //   this.fechCustomers();
   // },
   
-  achievements(){
-    if (this.customer.achievements > 90){
-      console.loe(this.customer.name+":"+"优秀");
-    }else if(this.customer.achievements > 80){
-      console.loe("良好");
-    }else if (this.customer.achievements > 70){
-      console.loe("一般");
-    }else{
-      console.loe("不及格");
-
-    }
-  
-  }
 }
   
 
@@ -89,5 +76,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.form-conted{
+  width:100%;
+  height: 35px;
+}
 
 </style>
